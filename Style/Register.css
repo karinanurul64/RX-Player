@@ -1,0 +1,214 @@
+body{
+    display: block;
+    margin: 0;
+    background-color: black;
+}
+
+header{
+    display: flex;
+    background-color: black;
+    justify-content: space-between;
+}
+
+.nav-left{
+    display: flex;
+}
+
+.logo{
+    width: 50%;
+    margin: 5% 10%;
+}
+
+.body
+ {
+     background-color: rgba(0, 0, 0, 0.7);
+     width: 55%;
+     min-height: calc(100vh - 102px - 19px); 
+     margin-left: auto;
+     margin-right: auto;
+}
+
+.title-register
+{
+    margin-top: -3%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.title-register > p
+{
+    font-weight: bold;
+    font-size: 3.5vh;
+    color: white;
+    font-family: "calibri";
+    letter-spacing: 0.2vh;
+}
+
+.description-title
+{
+    margin-left: 10%;
+    margin-right: 10%;
+    border-bottom: solid 1px grey;
+}
+
+.description-title > p
+{
+    font-size: 2vh;
+    margin-top: -2%;
+    color: white;
+    font-family: "calibri";
+    font-weight: bold;
+    opacity: 0.8;
+    letter-spacing: 0.1vh;
+}
+
+.container-form
+{
+    padding-top: 2.5%;
+    font-family: "Calibri";
+}
+
+.form-title
+{
+    padding-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 0.6%;
+}
+
+.form-title > label
+{
+    color: white;
+    font-size: 2.4vh;
+    padding-bottom: 1vh;
+}
+
+.container-input
+{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.container-input > input
+{
+    background-color: transparent;
+    border: none;
+    border-bottom: solid 1px white;
+    width: 100%;
+    height: auto;
+    font-size: 2vh;
+    color: white;
+    margin-bottom: 3%;
+    cursor: text;
+}
+
+.container-input > select
+{
+    border: none;
+    border-bottom: solid 1px white;
+    width: 100%;
+    height: auto;
+    font-size: 2vh;
+    color: white;
+    margin-bottom: 3%;
+    background-color: black;
+    cursor: pointer;
+}
+
+.container-input > option
+{
+    width: 50%;
+}
+
+.checkbox-container
+{
+    color: white;
+    padding-left: 10%; 
+    padding-right: 10%;
+    padding-bottom: 3%;
+}
+
+.checkbox-container > input
+{
+    width: 1.5vh;
+    height: 1.5vh;
+    cursor: pointer;
+}
+
+
+.container-register > button
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    padding-right: 2vh;
+    padding-left: 2vh;
+    padding-bottom: 1vh;
+    padding-top: 1vh;
+
+    border: none;
+    background-color: transparent;
+    color: white;
+    border-bottom: solid 1px white;
+    border-top: solid 1px white;
+    
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.container-register > button:hover
+{
+    transform: scale(1.1);
+}
+
+.container-register > button:active
+{
+    transform: scale(1);
+}
+
+.footer {
+     position: fixed;
+     left: 0;
+     bottom: 0;
+     width: 100%;
+     background-color: black;
+     color: white;
+     text-align: center;
+     font-family: "calibri";
+ }
+
+@media screen and (max-width:1400px)
+{
+    .body
+    {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:1100px)
+{
+    .title-register
+    {
+        padding-top: 7.5%;
+    }
+}
+
+@media screen and (max-width:800px)
+{
+    .form-title > label
+    {
+        font-size: 2vh;
+    }
+
+    .container-input
+    {
+        margin-bottom: 4%;
+    }
+
+    .container-input > input
+    {
+        font-size: 1.5vh;
+    }
+}
